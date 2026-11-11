@@ -1,0 +1,34 @@
+{
+  "goal": "One sentence: what exists when this is finished.",
+  "stack": {
+    "decision": "Python 3.12, FastAPI, SQLite, pytest",
+    "why": "Matches the existing service; no new runtime to operate."
+  },
+  "protected": ["tests/acceptance/**"],
+  "launch": {
+    "cmd": "uvicorn app.main:app --port 8765",
+    "ready": {"http": "http://127.0.0.1:8765/health"},
+    "timeout_s": 30
+  },
+  "tasks": [
+    {
+      "id": "t1",
+      "title": "Health endpoint",
+      "spec": "Add GET /health returning 200 and {\"status\": \"ok\"}. No auth.",
+      "allowed": ["app/**", "pyproject.toml"],
+      "checks": ["python -m pytest tests/acceptance/test_health.py -q"]
+    },
+    {
+      "id": "t2",
+      "title": "Landing page",
+      "spec": "Serve a landing page at / with the product name as the heading and a sign-up button.",
+      "allowed": ["app/**"],
+      "checks": ["python -m pytest tests/acceptance/test_landing.py -q"],
+      "ui": {
+        "url": "http://127.0.0.1:8765/",
+        "criterion": "A page with a large heading and one clearly visible sign-up button.",
+        "mockup_prompt": "optional: overrides the default mockup prompt"
+      }
+    }
+  ]
+}

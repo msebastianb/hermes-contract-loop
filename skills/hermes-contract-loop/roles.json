@@ -1,0 +1,33 @@
+{
+  "scout": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "openrouter",
+    "max_turns": 30,
+    "budget_s": 300,
+    "toolsets": "terminal,file"
+  },
+  "coder": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "openrouter",
+    "max_turns": 60,
+    "budget_s": 900,
+    "toolsets": "terminal,file"
+  },
+  "judge": {
+    "model": "typesafe/jev-1.14",
+    "accept": 0.8,
+    "reject": 0.2
+  },
+  "image": {
+    "model": "qwen/qwen-image-2.1-turbo",
+    "aspect_ratio": "16:9"
+  },
+  "limits": {
+    "attempts": 3,
+    "check_timeout_s": 600,
+    "packet_lines": 200,
+    "close_diff_chars": 30000
+  },
+  "key_file": null,
+  "chrome": null
+}
