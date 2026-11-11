@@ -6,11 +6,7 @@
 
 The expensive model writes the **contract** — the stack decision, small tasks, the files each task may touch, and the acceptance checks that prove it done. Then a script runs the loop without it.
 
-[![tests](https://img.shields.io/badge/tests-14%20passing%20offline-6ee7b7?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/msebastianb/hermes-contract-loop/actions/workflows/tests.yml)
-[![python](https://img.shields.io/badge/python-3.9%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)](#requirements)
-[![dependencies](https://img.shields.io/badge/dependencies-none-6ee7b7?style=for-the-badge)](#requirements)
-[![license](https://img.shields.io/badge/license-MIT-3b82f6?style=for-the-badge)](LICENSE)
-[![Hermes skill](https://img.shields.io/badge/Hermes-skill-a78bfa?style=for-the-badge)](skills/hermes-contract-loop/SKILL.md)
+[![tests](https://img.shields.io/badge/tests-14%20passing-6ee7b7?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/msebastianb/hermes-contract-loop/actions/workflows/tests.yml) [![python](https://img.shields.io/badge/python-3.9%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)](#requirements) [![dependencies](https://img.shields.io/badge/dependencies-none-6ee7b7?style=for-the-badge)](#requirements) [![license](https://img.shields.io/badge/license-MIT-3b82f6?style=for-the-badge)](LICENSE) [![Hermes skill](https://img.shields.io/badge/Hermes-skill-a78bfa?style=for-the-badge)](skills/hermes-contract-loop/SKILL.md)
 
 </div>
 
